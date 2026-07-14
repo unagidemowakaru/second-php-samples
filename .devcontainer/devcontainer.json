@@ -1,0 +1,21 @@
+{
+  "name": "AlmaLinux 10 Development Environment",
+  
+  // 同じフォルダ（.devcontainer）にある Dockerfile を使ってコンテナをビルドする指定
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // Dockerfile側で作成した一般ユーザー「vscode」としてコンテナにログインする
+  "remoteUser": "vscode",
+
+  // Codespaces上でのVS Code設定（必要に応じてカスタマイズしてください）
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        // 必要に応じてここに拡張機能のID（例: "ms-sarifweb.sarif-viewer" など）を追記できます
+      ]
+    }
+  }
+}
